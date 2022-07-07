@@ -114,7 +114,8 @@ class ClientPanel extends JPanel implements Runnable {
         @Override
         public void actionPerformed(ActionEvent e) {
             try {
-                Socket csock = new Socket("192.168.1.16", 2882);
+                //Inserte dirección IP del ServerSocket
+                Socket csock = new Socket("###.###.###.###", 2882);
 
                 ClientData data = new ClientData();
                 data.setName(name.getText());
